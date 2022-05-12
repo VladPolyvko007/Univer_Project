@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/lesson/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="content__task">
+        <div class="text">Task№1</div>
+        <button class="btn" onclick="openWindow1()">Start</button>
+      </div>
+      <div class="content__task">
+        <div class="text">Task№2</div>
+        <div id="timer"></div>
+        <div>
+          <button id="start-button" class="btn1 btn">Start</button>
+          <button id="reset-button" class="btn2 btn" disabled>Reset</button>
+        </div>
+      </div>
+      <div class="content__task">
+        <div class="text">Task№3</div>
+        <img
+          id="myImg"
+          src="/lesson/img/Без названия (1).jpg"
+          width="107"
+          height="98"
+        />
+        <br />
+        <br />
+        <button id="button" class="btn btn3">Start</button>
+      </div>
+    </div>
+    <div class="content__task task4">
+      <div class="text">Task№4</div>
+      <input
+        id="data"
+        cols="40"
+        rows="5"
+        onkeyup="countChars('data','charcount');"
+        onkeydown="countChars('data','charcount');"
+        onmouseout="countChars('data','charcount');"
+        class="input-style"
+      />
+      <br />
+      <span id="charcount">0</span> Введено символів.
+    </div>
+    <script src="/lesson/main.js"></script>
+  </body>
+</html>
